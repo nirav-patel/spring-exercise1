@@ -19,7 +19,7 @@ public class DemoApplication {
 		appContext.register(JavaConfig.class);
 		appContext.refresh();
 
-		ICustomerService service = appContext.getBean("customerService", ICustomerService.class);
+		ICustomerService service = appContext.getBean(ICustomerService.class);
 		service.displayInfo();
 
 		((ConfigurableApplicationContext) appContext).close();
