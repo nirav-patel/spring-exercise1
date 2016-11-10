@@ -25,7 +25,7 @@ public class CustomerServiceImpl implements ICustomerService {
 	private ICustomerRepository customerRepository;
 
 	@Autowired
-	@Qualifier("QA")
+	@Qualifier("Prod")
 	private IManager manager;
 
 	public CustomerServiceImpl() {

@@ -12,7 +12,7 @@ import com.sample.util.TestCondition;
  * If required, then register bean only for specific profile or qualifier
  * */
 @Component
-@Qualifier("QA")
+@Qualifier("Prod")
 @Conditional(TestCondition.class)
 public class PreProdManagerImpl implements IManager {
 

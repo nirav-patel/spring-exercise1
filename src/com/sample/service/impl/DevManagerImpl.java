@@ -11,7 +11,6 @@ import com.sample.service.IManager;
  * If required, then register bean only for specific profile or qualifier
  * */
 @Component
-@Profile("Ora")
 @Qualifier("Dev")
 public class DevManagerImpl implements IManager {
 
