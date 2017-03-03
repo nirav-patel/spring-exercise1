@@ -3,6 +3,9 @@ package com.sample.repository.impl;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Component;
+
 import com.sample.model.Customer;
 import com.sample.repository.ICustomerRepository;
 
@@ -10,6 +13,8 @@ import com.sample.repository.ICustomerRepository;
  * Annotate this class to indicate it is an auto scan component
  * If required, then register bean only for specific profile or qualifier
  * */
+@Component("customerRepository")
+@Profile("Ora")
 public class OracleCustomerRepositoryImpl implements ICustomerRepository {
 
 	@Override

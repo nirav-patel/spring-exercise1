@@ -12,7 +12,7 @@ public class TestCondition implements Condition {
 		boolean flag = false;
 		Environment env = context.getEnvironment();
 		for(String profile : env.getActiveProfiles()){
-			if("SS".equals(profile)){
+			if("Ora".equals(profile)){
 				flag= true;
 				break;
 			}
