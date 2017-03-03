@@ -24,7 +24,9 @@ public class DemoApplication {
 		appContext.refresh();
 
 		ICustomerService service = appContext.getBean(ICustomerService.class);
+
 		System.out.println("\n Test for current profile::");
+
 		service.displayInfo();
 
 		ICustomerService service2 = appContext.getBean(ICustomerService.class);
