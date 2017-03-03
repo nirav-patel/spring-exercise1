@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Conditional;
 import org.springframework.stereotype.Component;
 
 import com.sample.service.IManager;
+import com.sample.util.TestCondition;
 
 /**
  * Annotate this class to indicate it is an auto scan component
